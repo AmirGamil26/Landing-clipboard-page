@@ -1,0 +1,514 @@
+/*  ==== Reset ====  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+:root{ 
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../webfonts/BaiJamjuree-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../webfonts/BaiJamjuree-SemiBold.ttf');
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/*  ==== General ====  */
+body{
+    font-family: 'Bai Jamjuree';
+    font-size: 18px;
+}
+/*  == Header Section == */
+header{
+    text-align: center;
+    padding: 4em 4em;
+}
+header img{
+    margin: 1em 0;
+}
+header h1{
+    font-size: 35px;
+    margin: 1em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+header p{
+    color: var(--Grayish-Blue);
+    margin: 1em 0;
+    padding: 0em 14em;
+    line-height: 1.6;
+}
+header .btn1{
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    font-family: 'Bai Jamjuree';
+    border: none; 
+    border-radius: 25px;
+    padding: 1em 2em;
+    margin: 1.5em 1em;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+header .btn1:hover{
+    background-color:rgb(91, 230, 183);
+}
+header .btn2{
+    background-color: var(--Light-Blue);
+    color: #fff;
+    font-family: 'Bai Jamjuree';
+    border: none; 
+    border-radius: 25px;
+    padding: 1em 2em;
+    margin: 1.5em 1em;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+header .btn2:hover{
+    background-color: rgba(135, 87, 187, 0.493);
+}
+/*  ==== Main ====  */
+main{
+    text-align: center;
+    margin: 1em 0;
+}
+main h3{
+    font-size: 25px;
+    margin: 1em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+main p{
+    color: var(--Grayish-Blue);
+    margin: 1em 0;
+    padding: 0em 16em;
+}
+main .imgSearch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 4em 0;
+    
+}
+main .imgSearch .img img{
+    width: 100%;
+}
+main .imgSearch .history{
+    text-align: left;
+    margin-left: 10em;
+    margin-top: 1em;
+    padding: 1em 1em;
+}
+main .imgSearch .history h5{
+    font-size: 23px;
+    color: var(--Dark-Grayish-Blue);
+    padding: 0 7em;
+}
+main .imgSearch .history p{
+    padding: 0 10em;
+    font-size: 13px;
+}
+/*  ========= Start Access section ====   */
+.access{
+    text-align: center;
+    margin: 1em 0;
+}
+.access h3{
+    font-size: 25px;
+    margin: 1em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.access p{
+    color: var(--Grayish-Blue);
+    margin: 1.5em 0 4em 0;
+    padding: 0em 18em;
+}
+/*  ========= End Access section ====   */
+/*  ========= Start supercharge section ====   */
+.supercharge{
+    text-align: center;
+    margin: 1em 0;
+}
+.supercharge h3{
+    font-size: 25px;
+    margin: 1em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.supercharge p{
+    color: var(--Grayish-Blue);
+    margin: 1.5em 0 4em 0;
+    padding: 0em 18em;
+}
+/*  ========= End supercharge section ====   */
+/*  ========= Start description section ====   */
+.desc{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* margin: 0 2em; */
+}
+.desc .blacklists{
+    padding: 1em 1em;
+}
+.desc .blacklists img{
+    margin: 1em 0;
+}
+.desc .blacklists h5{
+    font-size: 17px;
+    margin: 0.5em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.desc .blacklists p{
+    color: var(--Grayish-Blue);
+    font-size: 17px;
+    padding: 0 2.5em;
+}
+.desc .snippets{
+    padding: 1em 1em;
+}
+.desc .snippets img{
+    margin: 1em 0;
+}
+.desc .snippets h5{
+    font-size: 17px;
+    margin: 0.5em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.desc .snippets p{
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    padding: 0 2.5em;
+}
+.desc .preview{
+    padding: 1em 1em;
+}
+.desc .preview img{
+    margin: 1em 0;
+}
+.desc .preview h5{
+    font-size: 17px;
+    margin: 0.5em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.desc .preview p{
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    padding: 0 2.5em;
+}
+/*  ========= End description section ====   */
+/*  ========= Start brand section ====   */
+.brand{
+    text-align: center;
+    margin: 8em 0 2em 0;
+}
+.brand img{
+    margin: 0 2em;
+}
+/*  ========= End brand section ====   */
+/*  ========= Start clipboard section ====   */
+.clipboard{
+    text-align: center;
+    padding: 4em 4em;
+}
+.clipboard h3{
+    font-size: 25px;
+    margin: 1em 0;
+    color: var(--Dark-Grayish-Blue);
+}
+.clipboard p{
+    color: var(--Grayish-Blue);
+    margin: 1em 0;
+    padding: 0em 15em;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.clipboard .btn1{
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    font-family: 'Bai Jamjuree';
+    border: none; 
+    border-radius: 25px;
+    padding: 1em 2em;
+    margin: 1.5em 1em;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.clipboard .btn1:hover{
+    background-color:rgb(91, 230, 183);
+}
+.clipboard .btn2{
+    background-color: var(--Light-Blue);
+    color: #fff;
+    font-family: 'Bai Jamjuree';
+    border: none; 
+    border-radius: 25px;
+    padding: 1em 2em;
+    margin: 1.5em 1em;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+.clipboard .btn2:hover{
+    background-color: rgba(135, 87, 187, 0.493);
+}
+/*  ========= End clipboard section ====   */
+/*  ========= Start footer section ====   */
+footer{
+    background-color: rgb(241, 239, 239);
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 1.8em 3em;
+}
+footer .copyright img{
+    width: 50%;
+}
+footer .contact ul li{
+    line-height: 1.8;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+}
+footer .privacy ul li{
+    line-height: 1.8;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+}
+footer .install ul li{
+    line-height: 1.8;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+}
+footer .social .fa-facebook{
+    margin: 1em 1em;
+    font-size: 20px;
+    color: #000;
+}
+footer .social .fa-twitter{
+    margin: 1em 1em;
+    font-size: 20px;
+    color: #000;
+}
+footer .social .fa-instagram{
+    margin: 1em 1em;
+    font-size: 20px;
+    color: #000;
+}
+/*  ========= End footer section ====   */
+.attribution{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* ======================== ************ ========================== */
+/*  ==== Media Query ====  */
+@media screen and (max-width: 600px){
+    header{
+        padding: 1em 1em;
+    }
+    header h1{
+        display: block;
+        font-size: 25px ;
+        padding: 1em 1em;
+    }
+    header p{
+        display: block;
+        padding: 0;
+        font-size: 16px;
+    }
+    header .btn1{
+        display: block;
+        margin-top: 1em;
+        padding: 1em 5.1em;
+    }
+    header .btn2{
+        display: block;
+        padding: 1em 5.1em;
+    }
+    main{
+        padding: 1em 1em;
+    }
+    main h3{
+        display: block;
+        padding: 1em 1em;
+    }
+    main p{
+        display: block;
+        padding: 0;
+        font-size: 16px;
+    }
+    main .imgSearch{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main .imgSearch .history{
+        margin: 1em 0;
+    }
+    main .imgSearch .history h5{
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    main .imgSearch .history p{
+        display: block;
+        padding: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    .access{
+        padding: 1em 1em;
+    }
+    .access h3{
+        font-size: 25px;
+        display: block;
+        margin: 1em 0;
+        color: var(--Dark-Grayish-Blue);
+    }
+    .access p{
+        display: block;
+        color: var(--Grayish-Blue);
+        margin: 1em 0; 
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .access img{
+        width: 100%;
+        margin: 1em 0;
+    }
+    .supercharge{
+        padding: 1em 1em;
+    }
+    .supercharge h3{
+        font-size: 25px;
+        display: block;
+        margin: 1em 0;
+        color: var(--Dark-Grayish-Blue);
+    }
+    .supercharge p{
+        display: block;
+        color: var(--Grayish-Blue);
+        margin: 1em 0; 
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .desc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .desc .blacklists{
+        padding: 0;
+    }
+    .desc .blacklists p{
+        padding: 0;
+        font-size: 13px;
+        display: block;
+        line-height: 1.6;
+    }
+    .desc .snippets {
+        padding: 0;
+    }
+    .desc .snippets p{
+        padding: 0;
+        font-size: 13px;
+        display: block;
+        line-height: 1.6;
+    }
+    .desc .preview {
+        padding: 0;
+    }
+    .desc .preview p{
+        padding: 0;
+        font-size: 13px;
+        display: block;
+        line-height: 1.6;
+    }
+    .brand{
+        margin: 4em 0;
+        padding: 1em 0;
+    }
+    .brand img{
+        display: block;
+        text-align: center;
+        margin: 0 4em;
+        padding: 1em 1em;
+    }
+    .clipboard{
+        padding: 1em 1em;
+    }
+    .clipboard h3{
+        display: block;
+        font-size: 25px ;
+        padding: 1em 1em;
+    }
+    .clipboard p{
+        display: block;
+        padding: 0;
+        font-size: 16px;
+    }
+    .clipboard .btn1{
+        display: block;
+        margin-top: 1em;
+        padding: 1em 5.1em;
+    }
+    .clipboard .btn2{
+        display: block;
+        padding: 1em 5.1em;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    footer .copyright{
+        margin: 1em 0; 
+        padding: 0;
+        text-align: center;
+    }
+    footer .copyright img{
+        text-align: center;
+    }
+    footer .contact ul li{
+        text-align: center;
+        line-height: 1.7;
+        margin: 1em 0;
+    }
+    footer .privacy ul li{
+        text-align: center;
+        line-height: 1.7;
+        margin: 1em 0;
+    }
+    footer .install ul li{
+        text-align: center;
+        line-height: 1.7;
+        margin: 1em 0;
+    }
+}
